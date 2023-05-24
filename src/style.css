@@ -1,0 +1,68 @@
+body{
+    max-width: 768px;
+    margin: auto;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bc-bl{
+    background-color: blue;
+}
+.w-100{
+    width: 100%;
+}
+.ta-c{
+    text-align: center;
+}
+.ta-l{
+    text-align: left;
+}
+.pa-20{
+    padding: 20px 0px;
+}
+.m-20{
+    margin: 20px 0px;
+}
+.m-20-l{
+    margin-left: 20px;
+}
+header{   
+    padding: 20px;
+}
+section{
+    margin: 20px 10px;
+}
+.card{
+    margin: 20px 20px;
+    text-align: left;
+    border-style: solid;
+    border-color: blue;
+}
+.input{
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+}
+.btn-hitung{
+    margin-top: 20px;
+    padding: 10px;
+}
+.btn-reset{
+    align-self: flex-end;
+    padding: 5px;
+    margin-right: 20px;
+}
+.output{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

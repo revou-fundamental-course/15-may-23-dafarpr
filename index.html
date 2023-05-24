@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaltik: Kalkulator Matematik</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="bc-bl flex-center">
+            <h1 class="ta-c"><span>Kaltik</span><sub>Kalkulator Matematik</sub></h1>
+        </header>
+        <section class="flex-center">
+            <div class="ta-c">
+                <h2>Welcome to Kaltik</h2>
+                <p>Hai Sobat, Selamat datang di Katik :] <br>
+                    sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+                <button class="w-100" onclick="showPersegi()">Persegi</button>
+                <button class="w-100" onclick="showPPanjang()">P. Panjang</button>
+            </div>
+
+            <!--Persegi-->
+            <div class="card w-100 flex-center" id="persegi">
+                <div class="bc-bl w-100"">
+                    <h2 class=" ta-c pa-20">Luas Persegi</h2>
+                </div>
+                <img src="img/persegi.jpg" alt="persegi">
+                <div class="ta-l w-100 m-20-l">
+                    <p>Rumus Luas Persegi yaitu: <br>
+                        L = S x S <br> <br>
+                        Dimana: <br> L = Luas <br> S = sisi</p>
+                </div>
+                <hr class="solid w-100">
+                <div class="w-100 ta-c flex-center m-20">
+                    <h2><b>Hitung Luas Persegi</b></h2>
+                    <input class="input" type="number" id="sisi-luas" placeholder="Nilai Sisi">
+                    <div class="output">
+                        <p id="hasil-luas"></p>
+                    </div>
+                    <button type="submit" class="btn-hitung" onclick="Luas()">Hitung</button>
+                    <button type="reset" class="btn-reset" onclick="reset()">Reset</button>
+                </div>
+            </div>
+            <div class="card w-100 flex-center m-20" id="persegi">
+                <div class="bc-bl w-100"">
+                    <h2 class=" ta-c pa-20">Keliling Persegi</h2>
+                </div>
+                <img src="img/persegi.jpg" alt="persegi">
+                <div class="ta-l w-100 m-20-l">
+                    <p>Rumus Keliling Persegi yaitu: <br>
+                        K = 4 x S <br> <br>
+                        Dimana: <br> K = Keliling <br> S = sisi</p>
+                </div>
+                <hr class="solid w-100">
+                <div class="w-100 ta-c flex-center m-20">
+                    <h2><b>Hitung keliling Persegi</b></h2>
+                    <input class="input" type="number" id="sisi-keliling" placeholder="Nilai Sisi">
+                    <div class="output">
+                        <p id="hasil-keliling"></p>
+                    </div>
+                    <button type="submit" class="btn-hitung" onclick="Keliling()">Hitung</button>
+                    <button type="reset" class="btn-reset" onclick="reset()">Reset</button>
+                </div>
+            </div>
+
+            <!--P.Panjang-->
+            <div class="card w-100 flex-center" id="PPanjang">
+                <div class="bc-bl w-100"">
+                    <h2 class=" ta-c pa-20">Luas P. Panjang</h2>
+                </div>
+                <img src="img/persegi-panjang.jpg" alt="persegi panjang">
+                <div class="ta-l w-100 m-20-l">
+                    <p>Rumus Luas P. Panjang yaitu: <br>
+                        L = P x L <br> <br>
+                        Dimana: <br> L = Luas <br> P = panjang <br>L = Lebar</p>
+                </div>
+                <hr class="solid w-100">
+                <div class="w-100 ta-c flex-center m-20">
+                    <h2><b>Hitung Luas P. Panjang</b></h2>
+                    <input class="input" type="number" id="panjang-luas" placeholder="Nilai Panjang">
+                    <input class="input" type="number" id="lebar-luas" placeholder="Nilai Lebar">
+                    <div class="output">
+                        <p id="hasil-luasPP"></p>
+                    </div>
+                    <button type="submit" class="btn-hitung" onclick="LuasPP()">Hitung</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </div>
+            <div class="card w-100 flex-center m-20" id="PPanjang">
+                <div class="bc-bl w-100"">
+                    <h2 class=" ta-c pa-20">Keliling P. Panjang</h2>
+                </div>
+                <img src="img/persegi-panjang.jpg" alt="p. panjang">
+                <div class="ta-l w-100 m-20-l">
+                    <p>Rumus Keliling P. Panjang yaitu: <br>
+                        K = 2 x (P + L) <br> <br>
+                        Dimana: <br> K = Keliling <br> P = Panjang <br>L = Lebar</p>
+                </div>
+                <hr class="solid w-100">
+                <div class="w-100 ta-c flex-center m-20">
+                    <h2><b>Hitung keliling P. Panjang</b></h2>
+                    <input class="input" type="number" id="panjang-keliling" placeholder="Nilai Panjang">
+                    <input class="input" type="number" id="lebar-keliling" placeholder="Nilai Lebar">
+                    <div class="output">
+                        <p id="hasil-kelilingPP"></p>
+                    </div>
+                    <button type="submit" class="btn-hitung" onclick="KelilingPP()">Hitung</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
