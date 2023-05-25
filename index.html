@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaltik: Kalkulator Matematik</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/ca7da2a476.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
         <header class="bc-bl flex-center">
-            <h1 class="ta-c"><span>Kaltik</span><sub>Kalkulator Matematik</sub></h1>
+            <h1 class="ta-c c-w"><span>Kaltik</span><sub>Kalkulator Matematik</sub></h1>
         </header>
         <section class="flex-center">
             <div class="ta-c">
@@ -26,7 +27,7 @@
             <!--Persegi-->
             <div class="card w-100 flex-center" id="persegi">
                 <div class="bc-bl w-100"">
-                    <h2 class=" ta-c pa-20">Luas Persegi</h2>
+                    <h2 class=" ta-c pa-20 c-w">Luas Persegi</h2>
                 </div>
                 <img src="img/persegi.jpg" alt="persegi">
                 <div class="ta-l w-100 m-20-l">
@@ -42,12 +43,12 @@
                         <p id="hasil-luas"></p>
                     </div>
                     <button type="submit" class="btn-hitung" onclick="Luas()">Hitung</button>
-                    <button type="reset" class="btn-reset" onclick="reset()">Reset</button>
+                    <button type="reset" class="btn-reset" onclick="resetLuas()">Reset</button>
                 </div>
             </div>
             <div class="card w-100 flex-center m-20" id="persegi">
                 <div class="bc-bl w-100"">
-                    <h2 class=" ta-c pa-20">Keliling Persegi</h2>
+                    <h2 class=" ta-c pa-20 c-w">Keliling Persegi</h2>
                 </div>
                 <img src="img/persegi.jpg" alt="persegi">
                 <div class="ta-l w-100 m-20-l">
@@ -63,14 +64,14 @@
                         <p id="hasil-keliling"></p>
                     </div>
                     <button type="submit" class="btn-hitung" onclick="Keliling()">Hitung</button>
-                    <button type="reset" class="btn-reset" onclick="reset()">Reset</button>
+                    <button type="reset" class="btn-reset" onclick="resetKeliling()">Reset</button>
                 </div>
             </div>
 
             <!--P.Panjang-->
             <div class="card w-100 flex-center" id="PPanjang">
                 <div class="bc-bl w-100"">
-                    <h2 class=" ta-c pa-20">Luas P. Panjang</h2>
+                    <h2 class=" ta-c pa-20 c-w">Luas P. Panjang</h2>
                 </div>
                 <img src="img/persegi-panjang.jpg" alt="persegi panjang">
                 <div class="ta-l w-100 m-20-l">
@@ -87,12 +88,12 @@
                         <p id="hasil-luasPP"></p>
                     </div>
                     <button type="submit" class="btn-hitung" onclick="LuasPP()">Hitung</button>
-                    <button type="reset" class="btn-reset">Reset</button>
+                    <button type="reset" class="btn-reset" onclick="resetLuasPP()">Reset</button>
                 </div>
             </div>
             <div class="card w-100 flex-center m-20" id="PPanjang">
                 <div class="bc-bl w-100"">
-                    <h2 class=" ta-c pa-20">Keliling P. Panjang</h2>
+                    <h2 class=" ta-c pa-20 c-w">Keliling P. Panjang</h2>
                 </div>
                 <img src="img/persegi-panjang.jpg" alt="p. panjang">
                 <div class="ta-l w-100 m-20-l">
@@ -109,10 +110,17 @@
                         <p id="hasil-kelilingPP"></p>
                     </div>
                     <button type="submit" class="btn-hitung" onclick="KelilingPP()">Hitung</button>
-                    <button type="reset" class="btn-reset">Reset</button>
+                    <button type="reset" class="btn-reset" onclick="resetKelilingPP()">Reset</button>
                 </div>
             </div>
         </section>
+        <footer class="flex-center">
+            <a href="https://github.com/dafarpr" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github fa-xl">github</i></a>
+            <a href="https://www.linkedin.com/in/dafa-rizki-71abb7153/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin fa-xl">linkedin</i></a>
+            <p>2023. Kaltik</p>
+        </footer>
     </main>
     <script src="src/script.js"></script>
 </body>
